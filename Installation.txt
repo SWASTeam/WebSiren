@@ -1,0 +1,137 @@
+1.  ModSecurity Machine (CentOS 6.3 as OS)
+ModSecurity is a module for Apache to act as a web application firewall, which bring another security layer to your website. Nowadays, it is very important to have this protection so your website will be protected from Internet threats.
+Steps for installation and configuring ModSecurity machine are listed below.
+1.	Apache Installation
+2.	ModSecurity installation
+3.	mlogc module configuration
+4.	WebSirenAgent installation & Configuration
+
+ModSecurity installation
+Apache directory: /etc/httpd
+Apache configuration: /etc/httpd/conf/httpd.conf
+ModSecurity configuration: /etc/httpd/conf.d/modsecurity.conf
+
+1. Install Apache via yum and make sure it running properly:
+$ yum install -y httpd*
+$ chkconfig httpd on
+$ service httpd start
+2. Install all the needed packages via yum
+$ yum install pcre* libxml2* libcurl* lua* libtool openssl -y
+3. Download mod_security source file at http://www.modsecurity.org/download/. In this case I will download modsecurity-apache_2.6.2.tar.gz :
+$ cd /usr/local/src
+$ tar -xzf  modsecurity-apache_2.6.2.tar.gz
+4. Extract the downloaded files, navigate to the folder, configure and install:
+$ cd modsecurity-apache*
+$ ./configure
+$ make
+$ make install
+
+5. Copy the ModSecurity configuration file into Apache configuration directory:
+$ cp modsecurity.conf-recommended /etc/httpd/conf.d/modsecurity.conf
+6. Activate the mod_security and unique_id modules in Apache configuration file. Open /etc/httpd/conf/httpd.conf via text editor and add following line:
+LoadModule security2_module modules/mod_security2.so
+LoadModule unique_id_module modules/mod_unique_id.so
+7. Now we need to turn on the protection in ModSecurity configuration file. Open /etc/httpd/conf.d/modsecurity.conf via text editor and change following line:
+SecRuleEngine DetectionOnly
+To:
+SecRuleEngine On
+8. Restart Apache so mod_security can be loaded into Apache environment:
+$ service httpd restart
+Done! Your website now has been protected with Apache ModSecurity. You can tweak the rules inside modsecurity.conf files to suit your website requirement. You can check what is happening by reviewing the log file located under /var/log/modsec_audit.log.
+ModSecurity Log Collector (mlogc) Installation
+1.	Get the latest ModSecurity installation.
+2.	Stop Apache
+service httpd stop	
+3.	Untar it and install:
+tar -xvzf modsecurity-apache_2.5.7.tar.gz
+4.	cd modsecurity-apache_2.5.7/apache2/ and 
+./configure
+make
+make mlogc
+make install
+5.	Restart Apache
+ModSecurity Log Collector (mlogc) Configuration 
+
+1.	Copy the mlogc executable to an appropriate location.   A good location might be /usr/local/bin, /opt/mlogc/bin  etc.
+
+2.	Create sensor in the central audit log repository. Note the username and the password (SENSOR_USERNAME, SENSOR_PASSWORD).  Also note the IP address central repository listens on (CONSOLE_IP_ADDRESS).
+
+3.	Configure the ModSecurity sensor to use mlogc.
+
+   # Use ReleventOnly auditing
+      SecAuditEngine RelevantOnly
+    
+   # Must use concurrent logging
+     SecAuditLogType Concurrent
+    
+   # Send all audit log parts
+     SecAuditLogParts ABIDEFGHZ
+    
+   # Use the same /CollectorRoot/LogStorageDir as in mlogc.conf
+     SecAuditLogStorageDir /var/log/mlogc/data
+    
+   # Pipe audit log to mlogc with your configuration
+     SecAuditLog "|/usr/local/bin/mlogc /etc/mlogc.conf"
+
+4.	Using the mlogc-default.conf as a template, configure the logger.
+
+   CollectorRoot       "/var/log/mlogc"
+
+•	Typically, this will be the parent directory that is configured in ModSecurity for the SecAuditLogStorageDirectory.  So, if your SecAuditLogStorageDirectory is set to /var/log/mlogc/data, then set this to /var/log/mlogc.  CollectorRoot   "/var/log/mlogc"
+
+ConsoleURI         https://CONSOLE_IP_ADDRESS:8886/rpc/auditLogReceiver
+
+•	ModSecurity Console receiving URI. You can change the host  and the port parts but leave everything else as is.
+
+SensorUsername      "SENSOR_USERNAME"
+SensorPassword      "SENSOR_PASSWORD"
+
+•	Sensor credentials
+
+LogStorageDir       "data"
+
+•	Base directory where the audit logs are stored. This can be specified  as a path relative to the CollectorRoot, or a full path. It should resolve to the same path as ModSecurity's SecAuditLogStorageDirectory.
+
+
+5.	Restart ModSecurity Sensor. To troubleshoot, generate alerts and observe file "mlogc-error.log".
+
+WebSirenAgent Installation & Configuration
+1.	Apache AMQ should be up and running.
+2.	Extract WebSirenAgent.tar in your modsecurity firewall is configured.
+3.	Before starting WebSirenAgent, open conf/config.properties in agent’s directory.
+a.	Set your sytem’s IP and port where WebSiren and apache AMQ is configured in Connection property.
+e.g Connection=tcp://192.168.0.1:616164
+
+b.	Set the path of your modsecurity configuration file in MSConfigFile property
+e.g MSConfigFile=/etc/httpd/conf.d/modsecurity.conf
+
+c.	Set the path of directory where you copy your modsecurity rule files in RuleFileDir property.
+e.g RuleFileDir=/etc/httpd/conf.d
+
+d.	Set the path of the audit log file of your modsecurity in AuditLogsFilePath property.
+e.g AuditLogsFilePath=/var/log/modsec_audit.log
+
+4.	Run start-agent.sh.   
+2.	Web Siren Machine (Windows 7 as OS)
+WebSiren is a Web based application which will be deployed on a Web Server machine. In this case, we will install Apache Web Server on this machine and deploy WebSiren application into it. There are some pre-requisite applications that are also needed to run WebSiren smoothly. 
+Steps for installation and configuring WebSiren machine are listed below.
+1.	Installation of JDK 1.7
+2.	Apache Web Server Installation
+3.	Running Apache Active MQ Service
+4.	Installation of MySQL
+5.	Database Configuration
+6.	Semantic Knowledge Base Configuration
+7.	Deployment of WAR
+Running Apache Active MQ Service
+1.	Download Apache Active MQ Module from http://activemq.apache.org/download.html
+2.	Extract the zip file 
+3.	Goto bin folder in the extracted folder, and execute activemq file
+Database Configuration
+1.	Create Database with name HTTPLogDB.
+2.	Import HTTPLogDB.sql file from database folder into MySQL. 
+3.	Default username/password for MySQL is root/swaf. 
+Semantic Knowledge Base Configuration
+1.	Copy the folder WebSiren from repository folder to your D drive. 
+Deployment of WAR
+1.	Copy the WebSiren-1.0.0.war to webapps folder of apache tomcat. 
+2.	Open browser, enter the URL http://localhost/WebSiren-1.0.0, and press enter
