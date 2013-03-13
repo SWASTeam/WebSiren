@@ -1,0 +1,2301 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://www.owl-ontologies.com/Ontology1326263783.owl#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+    xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#hasConfiguration">
+    <rdfs:comment xml:lang="en">null</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#ctl"/>
+    <rdfs:range rdf:nodeID="A0"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#htmlEntityDecode">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Transformation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionExpression.REQUEST_HEADERS">
+    <hasSelectedElement rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Element.Content-Length"/>
+    <rdfs:label xml:lang="EN">REQUEST_HEADERS</rdfs:label>
+    <hasSelectedCollection rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#REQUEST_HEADERS"/>
+    <hasColExpID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">REQUEST_HEADERS</hasColExpID>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionExpression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#SCRIPT_UID">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCRIPT_UID</rdfs:label>
+    <rdfs:comment xml:lang="en">Script user ID</rdfs:comment>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#ServerVariables"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#REMOTE_HOST">
+    <rdfs:comment xml:lang="en">Remote host</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">REMOTE_HOST</rdfs:label>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#ServerVariables"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#ValidationOperator">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Operator"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A1">
+    <rdf:rest rdf:nodeID="A2"/>
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</rdf:first>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#block">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#BlockAction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A3">
+    <rdf:rest rdf:nodeID="A4"/>
+    <rdf:first rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#StandardVariable"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A5">
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">htmlEntityDecode</rdf:first>
+    <rdf:rest rdf:nodeID="A6"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#NonDisruptiveAction">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Action"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A7">
+    <rdf:rest rdf:nodeID="A8"/>
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WARNING</rdf:first>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A9">
+    <rdf:rest rdf:nodeID="A1"/>
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</rdf:first>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TX.var_openrule.idvar_close-AUTOMATIONfwdslashSECURITY_SCANNER-var_openmatched_var_namevar_close">
+    <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">op_equal%{matched_var}</hasValue>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#UserDefined"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#REQBODY_PROCESSOR">
+    <rdfs:comment xml:lang="en">Request processor that handled request body</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">REQBODY_PROCESSOR</rdfs:label>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#ParsingFlags"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TX.var_openrule.idvar_close-PROTOCOL_VIOLATIONfwdslashEVASION-var_openmatched_var_namevar_close">
+    <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">op_equal%{matched_var}</hasValue>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#UserDefined"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#VariableExpression.REQUEST_METHOD">
+    <hasVarExpID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">REQUEST_METHOD</hasVarExpID>
+    <hasSelectedVariable rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#REQUEST_METHOD"/>
+    <rdfs:label xml:lang="EN">REQUEST_METHOD</rdfs:label>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#VariableExpression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionExpression.negation.REQUEST_COOKIES.__utm">
+    <hasUnaryOperator rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#negation"/>
+    <hasSelectedCollection rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#REQUEST_COOKIES"/>
+    <rdfs:label xml:lang="EN">negation.REQUEST_COOKIES.__utm</rdfs:label>
+    <hasSelectedElement rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Element.__utm"/>
+    <hasColExpID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">negation.REQUEST_COOKIES.__utm</hasColExpID>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionExpression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#ServerVariables">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#StandardVariable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A10">
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hexEncode</rdf:first>
+    <rdf:rest rdf:nodeID="A5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#Element.Expect">
+    <isElementOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#REQUEST_HEADERS"/>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Element"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A11">
+    <owl:unionOf rdf:nodeID="A3"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#Condition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#ResponseCollection">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionVariable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#appliedOn">
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Condition"/>
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#RuleVariable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#hasUnaryOperator">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#UnaryOperator"/>
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Expression"/>
+    <rdfs:comment xml:lang="en">Unary Operator is applied on expression</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TX.var_openrule.idvar_close-WEB_ATTACKfwdslashSSI_INJECTION-var_openmatched_var_namevar_close">
+    <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">op_equal%{tx.0}</hasValue>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#UserDefined"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#ARGS_GET">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ARGS_GET</rdfs:label>
+    <rdfs:comment xml:lang="en">null</rdfs:comment>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#RequestCollection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#ge">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#NumericOperator"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A12">
+    <rdf:rest rdf:nodeID="A7"/>
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ERROR</rdf:first>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#Status">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#DataAction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#hasNamespace">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#XMLNAction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#Sequence.RuleMetaData">
+    <hasMaximum rdf:datatype="http://www.w3.org/2001/XMLSchema#int">100000</hasMaximum>
+    <hasLast rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</hasLast>
+    <hasFirst rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</hasFirst>
+    <hasConcept rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RuleMetaData</hasConcept>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Sequence"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A13">
+    <rdf:rest rdf:nodeID="A14"/>
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">forceRequestBodyVariable</rdf:first>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A15">
+    <rdf:rest rdf:nodeID="A9"/>
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</rdf:first>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TIME_WDAY">
+    <rdfs:comment xml:lang="en">Week day (0-6)</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TIME_WDAY</rdfs:label>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#TimeVariables"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionExpression.REQUEST_HEADERS.Host">
+    <hasSelectedCollection rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#REQUEST_HEADERS"/>
+    <hasColExpID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">REQUEST_HEADERS.Host</hasColExpID>
+    <rdfs:label xml:lang="EN">REQUEST_HEADERS.Host</rdfs:label>
+    <hasSelectedElement rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Element.Host"/>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionExpression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#MULTIPART_CRLF_LF_LINES">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MULTIPART_CRLF_LF_LINES</rdfs:label>
+    <rdfs:comment xml:lang="en">Multipart parsing error: mixed line endings used</rdfs:comment>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#ParsingFlags"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#Element">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Variable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A16">
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hexDecode</rdf:first>
+    <rdf:rest rdf:nodeID="A10"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#Operator">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#Element.Range">
+    <isElementOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#REQUEST_HEADERS"/>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Element"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#StringOperator">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Operator"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#BlockAction">
+    <rdfs:comment xml:lang="en">Indicates that a rule wants to block</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Block</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#DisruptiveAction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#DisruptiveAction">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Action"/>
+    <rdfs:comment xml:lang="en">null</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TX.msg">
+    <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">op_equal%{rule.msg}</hasValue>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#UserDefined"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#QUERY_STRING">
+    <rdfs:comment xml:lang="en">Request query string</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">QUERY_STRING</rdfs:label>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#RequestVariables"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#Sequence">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TX.var_openrule.idvar_close-WEB_ATTACKfwdslashEMAIL_INJECTION-var_openmatched_var_namevar_close">
+    <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">op_equal%{tx.0}</hasValue>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#UserDefined"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#hasColExpID">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionExpression"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TX.policy_score">
+    <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">op_append%{tx.notice_anomaly_score}</hasValue>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#UserDefined"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#deleteCollection">
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#SecAction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionExpression.REQUEST_HEADERS.Accept">
+    <hasColExpID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">REQUEST_HEADERS.Accept</hasColExpID>
+    <hasSelectedCollection rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#REQUEST_HEADERS"/>
+    <rdfs:label xml:lang="EN">REQUEST_HEADERS.Accept</rdfs:label>
+    <hasSelectedElement rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Element.Accept"/>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionExpression"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A17">
+    <owl:oneOf rdf:nodeID="A15"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataRange"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#Log">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#LogAction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A18">
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">requestBodyAccess</rdf:first>
+    <rdf:rest rdf:nodeID="A13"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A19">
+    <rdf:rest rdf:nodeID="A16"/>
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">escapeSeqDecode</rdf:first>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#normalisePath">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Transformation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TX.var_openrule.idvar_close-WEB_ATTACKfwdslashSQL_INJECTION-var_openmatched_var_namevar_close">
+    <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">op_equal%{tx.0}</hasValue>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#UserDefined"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TX.response_splitting_score">
+    <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">op_append%{tx.critical_anomaly_score}</hasValue>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#UserDefined"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#hasGroupName">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#RuleGroup"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasName</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:comment xml:lang="en">Policy's Name</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#Proxy">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Proxy</rdfs:label>
+    <rdfs:comment xml:lang="en">Proxy request to a backend web server</rdfs:comment>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#ProxyAction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#SpecialCollection">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionVariable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#DeprecateVar">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#VariableAction"/>
+    <rdfs:comment xml:lang="en">Decrement counter based on its age</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SecAction deprecatevar:session.score=60/300</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#pm">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#RegexOperator"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#Element.__utm">
+    <isElementOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#REQUEST_COOKIES"/>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Element"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#createdBy">
+    <rdfs:domain rdf:nodeID="A20"/>
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#User"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#VariableExpression.MULTIPART_UNMATCHED_BOUNDARY">
+    <rdfs:label xml:lang="EN">MULTIPART_UNMATCHED_BOUNDARY</rdfs:label>
+    <hasSelectedVariable rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#MULTIPART_UNMATCHED_BOUNDARY"/>
+    <hasVarExpID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MULTIPART_UNMATCHED_BOUNDARY</hasVarExpID>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#VariableExpression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#Element.User-Agent">
+    <isElementOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#REQUEST_HEADERS"/>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Element"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A21">
+    <rdf:rest rdf:nodeID="A22"/>
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">requestBodyProcessor</rdf:first>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#pass">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pass</rdfs:label>
+    <rdfs:comment xml:lang="en">Do not block, go to the next rule, The pass action is the only exception, as it will allow processing to continue when a match occurs. All other actions from this category will block in some specific way.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#DisruptiveAction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#SCRIPT_GID">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCRIPT_GID</rdfs:label>
+    <rdfs:comment xml:lang="en">Script group ID</rdfs:comment>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#ServerVariables"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#REQUEST_HEADERS_NAMES">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">REQUEST_HEADERS_NAMES</rdfs:label>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#RequestCollection"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A23">
+    <owl:oneOf rdf:nodeID="A24"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataRange"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#ARGS_POST_NAMES">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#RequestCollection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#USERID">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WEBAPPID</rdfs:label>
+    <rdfs:comment xml:lang="en">User ID associated with current transaction</rdfs:comment>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#StandardVariable"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A25">
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EMERGENCY</rdf:first>
+    <rdf:rest rdf:nodeID="A26"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#VariableExpression.negation.SESSIONID">
+    <hasUniaryOperator rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#negation"/>
+    <rdfs:label xml:lang="EN">negation.SESSIONID</rdfs:label>
+    <hasVarExpID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">negation.SESSIONID</hasVarExpID>
+    <hasSelectedVariable rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#SESSIONID"/>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#VariableExpression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#setTranscationVariable">
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Condition"/>
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#UserDefined"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#multiMatch">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#SpecialAction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#VariableExpression.REQUEST_FILENAME">
+    <rdfs:label xml:lang="EN">REQUEST_FILENAME</rdfs:label>
+    <hasSelectedVariable rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#REQUEST_FILENAME"/>
+    <hasVarExpID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">REQUEST_FILENAME</hasVarExpID>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#VariableExpression"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A14">
+    <rdf:rest rdf:nodeID="A21"/>
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">requestBodyLimit</rdf:first>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#createdAt">
+    <rdfs:domain rdf:nodeID="A27"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#FILES_TMPNAMES">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FILES_TMPNAMES</rdfs:label>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#RequestCollection"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A28">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#RuleGroup"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#Phase.5">
+    <rdfs:comment xml:lang="en">null</rdfs:comment>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Phase"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#VariableExpression">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Expression"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#md5">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Transformation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionExpression.REQUEST_HEADERS.Expect">
+    <hasSelectedCollection rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#REQUEST_HEADERS"/>
+    <hasSelectedElement rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Element.Expect"/>
+    <hasColExpID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">REQUEST_HEADERS.Expect</hasColExpID>
+    <rdfs:label xml:lang="EN">REQUEST_HEADERS.Expect</rdfs:label>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionExpression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TIME_EPOCH">
+    <rdfs:comment xml:lang="en">Seconds since January 1, 1970 (e.g., 1251029017)</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TIME_EPOCH</rdfs:label>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#TimeVariables"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#parityOdd7bit">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Transformation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#urlEncode">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Transformation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#base64Encode">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Transformation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#FILES_NAMES">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#RequestCollection"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A29">
+    <owl:oneOf rdf:nodeID="A25"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataRange"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#REQBODY_PROCESSOR_ERROR">
+    <rdfs:comment xml:lang="en">Request processor error flag (0 or 1)</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">REQBODY_PROCESSOR_ERROR</rdfs:label>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#ParsingFlags"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#FILES">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FILES</rdfs:label>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#RequestCollection"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A30">
+    <rdf:rest rdf:nodeID="A31"/>
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">md5</rdf:first>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#hasConditionID">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Condition"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TX.9">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#BuiltinVariables"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A32">
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ruleEngine</rdf:first>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#Element.Accept">
+    <isElementOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#REQUEST_HEADERS"/>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Element"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A33">
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Request</rdf:first>
+    <rdf:rest rdf:nodeID="A34"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#validateUrlEncoding">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#ValidationOperator"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#Phase.4">
+    <rdfs:comment xml:lang="en">null</rdfs:comment>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Phase"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A35">
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CRITICAL</rdf:first>
+    <rdf:rest rdf:nodeID="A12"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#LogAction">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#deny">
+    <rdfs:comment xml:lang="en">Block transaction with an error page</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">deny</rdfs:label>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#DisruptiveAction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TX.pm_score">
+    <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">op_append1</hasValue>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#UserDefined"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TX.var_openrule.idvar_close-WEB_ATTACKfwdslashRESPONSE_SPLITTING-var_openmatched_var_namevar_close">
+    <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">op_equal%{tx.0}</hasValue>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#UserDefined"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TX.var_openrule.idvar_close-POLICYfwdslashENCODING_RESTRICTED-var_openmatched_var_namevar_close">
+    <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">op_equal%{matched_var}</hasValue>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#UserDefined"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TX.sql_injection_score">
+    <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">op_append1</hasValue>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#UserDefined"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#skipUptoLabel">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:comment xml:lang="en">skip number of rules upto the mentioned label ID</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#SkipAfterAction"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Skip Upto Label</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#RESPONSE_CONTENT_TYPE">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RESPONSE_CONTENT_TYPE</rdfs:label>
+    <rdfs:comment xml:lang="en">Response content type</rdfs:comment>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#ResponseVariables"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A6">
+    <rdf:rest rdf:nodeID="A30"/>
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerCase</rdf:first>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#ParsingFlags">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#StandardVariable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#Initcol">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#VariableAction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A22">
+    <rdf:rest rdf:nodeID="A32"/>
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reponseBodyAccess</rdf:first>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#MULTIPART_UNMATCHED_BOUNDARY">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MULTIPART_UNMATCHED_BOUNDARY</rdfs:label>
+    <rdfs:comment xml:lang="en">Multipart parsing error: unmatched boundary detected (prone to false positives)</rdfs:comment>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#ParsingFlags"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#redirect">
+    <rdfs:comment xml:lang="en">Redirect request to some other web server</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">redirect</rdfs:label>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#RedirectAction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A24">
+    <rdf:rest rdf:nodeID="A33"/>
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phase</rdf:first>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#Append_1">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Append"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#Phase.3">
+    <rdfs:comment xml:lang="en">null</rdfs:comment>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Phase"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A26">
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ALERT</rdf:first>
+    <rdf:rest rdf:nodeID="A35"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#SkipAction">
+    <rdfs:comment xml:lang="en">Skip over one or more rules that follow</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Skip</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#SkipFlowAction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#cssDecode">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Transformation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#extensionOf">
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Rule"/>
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Rule"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#VariableExpression.REQUEST_PROTOCOL">
+    <hasSelectedVariable rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#REQUEST_PROTOCOL"/>
+    <rdfs:label xml:lang="EN">REQUEST_PROTOCOL</rdfs:label>
+    <hasVarExpID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">REQUEST_PROTOCOL</hasVarExpID>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#VariableExpression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#SkipAfterAction">
+    <rdfs:comment xml:lang="en">Skip to the rule or marker with the provided ID</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#SkipFlowAction"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SkipAfter</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#SERVER_ADDR">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SERVER_ADDR</rdfs:label>
+    <rdfs:comment xml:lang="en">Server address</rdfs:comment>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#ServerVariables"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#ENVCollection">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#SpecialCollection"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#editedAt">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:nodeID="A36"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#Severity.6">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Severity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#Phase.2">
+    <rdfs:comment xml:lang="en">ResponseBody</rdfs:comment>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Phase"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A8">
+    <rdf:rest rdf:nodeID="A37"/>
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NOTICE</rdf:first>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#index.jsp">
+    <hasUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">index.jsp</hasUrl>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Resource"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#withIn">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#StringOperator"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#hasMaximum">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Sequence"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#containWords">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#StringOperator"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#MULTIPART_DATA_BEFORE">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MULTIPART_DATA_BEFORE</rdfs:label>
+    <rdfs:comment xml:lang="en">Multipart parsing error: seen data before first boundary</rdfs:comment>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#ParsingFlags"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A2">
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</rdf:first>
+    <rdf:rest rdf:nodeID="A38"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#Rule">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A39">
+    <rdf:rest rdf:nodeID="A40"/>
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NOTICE</rdf:first>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#MATCHED_VAR_NAME">
+    <rdfs:comment xml:lang="en">Name of the last variable that match</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MATCHED_VAR_NAME</rdfs:label>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#StandardVariable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TX.ssi_injection_score">
+    <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">op_append%{tx.critical_anomaly_score}</hasValue>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#UserDefined"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#MODSEC_BUILD">
+    <rdfs:comment xml:lang="en">ModSecurity build version (e.g., 02050102)</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MODSEC_BUILD</rdfs:label>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#StandardVariable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#REQBODY_PROCESSOR_ERROR_MSG">
+    <rdfs:comment xml:lang="en">Request processor error message</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">REQBODY_PROCESSOR_ERROR_MSG</rdfs:label>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#ParsingFlags"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#FlowAction">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Action"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlowAction</rdfs:label>
+    <rdfs:comment xml:lang="en">Connect two or more rules into a single logical rule</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionExpression.REQUEST_HEADERS.Connection">
+    <hasColExpID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">REQUEST_HEADERS.Connection</hasColExpID>
+    <hasSelectedCollection rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#REQUEST_HEADERS"/>
+    <rdfs:label xml:lang="EN">REQUEST_HEADERS.Connection</rdfs:label>
+    <hasSelectedElement rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Element.Connection"/>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionExpression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TX.var_openrule.idvar_close-WEB_ATTACKfwdslashRESTRICTED_SQLI_CHARS-var_openmatched_var_namevar_close">
+    <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">op_equal%{tx.0}</hasValue>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#UserDefined"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#validateByteRange">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#ValidationOperator"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#hasUrl">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#Element.Request-Range">
+    <isElementOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#REQUEST_HEADERS"/>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Element"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#Severity.7">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Severity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#LogData">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#LogAction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#Phase.1">
+    <rdfs:comment xml:lang="en">ResponseHeader</rdfs:comment>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Phase"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A41">
+    <rdf:rest rdf:nodeID="A39"/>
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WARNING</rdf:first>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#REMOTE_USER">
+    <rdfs:comment xml:lang="en">Remote user</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">REMOTE_USER</rdfs:label>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#RequestVariables"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#hasOperator">
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Operator"/>
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Condition"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#hasTransient">
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#LogData"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#BuiltinVariables"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#capture">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">capture</rdfs:label>
+    <rdfs:comment xml:lang="en">Capture results into one or more variables</rdfs:comment>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#VariableAction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionExpression.FILES_NAMES">
+    <hasColExpID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FILES_NAMES</hasColExpID>
+    <hasSelectedCollection rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#FILES_NAMES"/>
+    <rdfs:label xml:lang="EN">FILES_NAMES</rdfs:label>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionExpression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#Sequence.Condition">
+    <hasMaximum rdf:datatype="http://www.w3.org/2001/XMLSchema#int">100000</hasMaximum>
+    <hasFirst rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</hasFirst>
+    <hasConcept rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Condition</hasConcept>
+    <hasLast rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</hasLast>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Sequence"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#SCRIPT_FILENAME">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCRIPT_FILENAME</rdfs:label>
+    <rdfs:comment xml:lang="en">Script filename/path</rdfs:comment>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#ServerVariables"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#hasProxyAddress">
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#ProxyAction"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#IPCollection">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#SpecialCollection"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TX.var_openrule.idvar_close-PROTOCOL_VIOLATIONfwdslashINVALID_REQ-var_openmatched_var_namevar_close">
+    <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">op_equal%{matched_var}</hasValue>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#UserDefined"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#hasElement">
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Element"/>
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionVariable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#AuditLog">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#LogAction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionExpression.REQUEST_HEADERS.Content-Encoding">
+    <hasColExpID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">REQUEST_HEADERS.Content-Encoding</hasColExpID>
+    <hasSelectedElement rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Element.Content-Encoding"/>
+    <rdfs:label xml:lang="EN">REQUEST_HEADERS.Content-Encoding</rdfs:label>
+    <hasSelectedCollection rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#REQUEST_HEADERS"/>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionExpression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#Severity.8">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Severity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#GlobalCollection">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#SpecialCollection"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A42">
+    <owl:oneOf rdf:nodeID="A43"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataRange"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#SERVER_NAME">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SERVER_NAME</rdfs:label>
+    <rdfs:comment xml:lang="en">Server name</rdfs:comment>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#ServerVariables"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TX.email_injection_score">
+    <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">op_append%{tx.critical_anomaly_score}</hasValue>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#UserDefined"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A44">
+    <rdf:rest rdf:nodeID="A28"/>
+    <rdf:first rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Rule"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#MULTIPART_HEADER_FOLDING">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MULTIPART_HEADER_FOLDING</rdfs:label>
+    <rdfs:comment xml:lang="en">Multipart parsing error: header folding used</rdfs:comment>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#ParsingFlags"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#REMOTE_ADDR">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">REMOTE_ADDR</rdfs:label>
+    <rdfs:comment xml:lang="en">Remote address</rdfs:comment>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#ServerVariables"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TX.sqli_select_statement">
+    <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">op_equal%{tx.sqli_select_statement} %{matched_var}</hasValue>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#UserDefined"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#Severity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#Element.Pragma">
+    <isElementOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#REQUEST_HEADERS"/>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Element"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionExpression.negation.REQUEST_HEADERS.via">
+    <rdfs:label xml:lang="EN">negation.REQUEST_HEADERS.via</rdfs:label>
+    <hasSelectedCollection rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#REQUEST_HEADERS"/>
+    <hasSelectedElement rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Element.via"/>
+    <hasUnaryOperator rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#negation"/>
+    <hasColExpID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">negation.REQUEST_HEADERS.via</hasColExpID>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionExpression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TimeVariables">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#StandardVariable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#le">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#NumericOperator"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#LoggingAction">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#NonDisruptiveAction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TX.">
+    <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">op_equalvar_openvar_close</hasValue>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#UserDefined"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#SERVER_PORT">
+    <rdfs:comment xml:lang="en">Server port</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SERVER_PORT</rdfs:label>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#ServerVariables"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#Element.Cache-Control">
+    <isElementOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#REQUEST_HEADERS"/>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Element"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A45">
+    <rdf:rest rdf:nodeID="A18"/>
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ruleRemoveById</rdf:first>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TIME_DAY">
+    <rdfs:comment xml:lang="en">Day of the month (1-31)</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TIME_DAY</rdfs:label>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#TimeVariables"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TX.var_openrule.idvar_close-POLICYfwdslashCONTENT_TYPE_NOT_ALLOWED-var_openmatched_var_namevar_close">
+    <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">op_equal%{matched_var}</hasValue>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#UserDefined"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#REQUEST_URI">
+    <rdfs:comment xml:lang="en">Request URI, convert to exclude hostname</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">REQUEST_URI</rdfs:label>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#RequestVariables"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#hexDecode">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Transformation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionExpression.REQUEST_HEADERS.Content-Type">
+    <hasColExpID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">REQUEST_HEADERS.Content-Type</hasColExpID>
+    <hasSelectedCollection rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#REQUEST_HEADERS"/>
+    <hasSelectedElement rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Element.Content-Type"/>
+    <rdfs:label xml:lang="EN">REQUEST_HEADERS.Content-Type</rdfs:label>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionExpression"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A40">
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">INFO</rdf:first>
+    <rdf:rest rdf:nodeID="A46"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A38">
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</rdf:first>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#MODSECURITY_CRS_35_BAD_ROBOTS">
+    <createdBy rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#admin"/>
+    <createdAt rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2013/02/22 03:53:58</createdAt>
+    <hasGroupSpecification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Default Description</hasGroupSpecification>
+    <hasGroupName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MODSECURITY_CRS_35_BAD_ROBOTS</hasGroupName>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#RuleGroup"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#ARGS_COMBINED_SIZE">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ARGS_COMBINED_SIZE</rdfs:label>
+    <rdfs:comment xml:lang="en">Total size of all request parameters combined</rdfs:comment>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#RequestVariables"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#NumericOperator">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Operator"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A27">
+    <owl:unionOf rdf:nodeID="A44"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#SimpleRule">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Rule"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#hasConcept">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Sequence"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#hexEncode">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Transformation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#MULTIPART_STRICT_ERROR">
+    <rdfs:comment xml:lang="en">At least one multipart error except MULTIPART_UNMATCHED_BOUNDARY occurred</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MULTIPART_SEMICOLON_MISSING</rdfs:label>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#ParsingFlags"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#hasCondition">
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Rule"/>
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Condition"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#ampersand">
+    <rdfs:comment xml:lang="en">Returns the number of the existance of the RuleTarget within the condition</rdfs:comment>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#UnaryOperator"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A47">
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ALERT</rdf:first>
+    <rdf:rest rdf:nodeID="A48"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A49">
+    <rdf:rest rdf:nodeID="A50"/>
+    <rdf:first rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Rule"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#ResourceCollection">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#SpecialCollection"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#RESPONSE_HEADERS">
+    <rdfs:comment xml:lang="en">Response headers (read-only collection)</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RESPONSE_HEADERS</rdfs:label>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#ResponseCollection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#none">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Transformation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionExpression.negation.REQUEST_HEADERS.Cache-Control">
+    <hasColExpID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">negation.REQUEST_HEADERS.Cache-Control</hasColExpID>
+    <rdfs:label xml:lang="EN">negation.REQUEST_HEADERS.Cache-Control</rdfs:label>
+    <hasUnaryOperator rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#negation"/>
+    <hasSelectedCollection rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#REQUEST_HEADERS"/>
+    <hasSelectedElement rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Element.Cache-Control"/>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionExpression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#Severity.2">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Severity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#REQUEST_URI_RAW">
+    <rdfs:comment xml:lang="en">Request URI, as it was presented in the request</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">REQUEST_URI_RAW</rdfs:label>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#RequestVariables"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#anadir.jsp">
+    <hasUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anadir.jsp</hasUrl>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Resource"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#SanitiseResponseHeader">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#LogAction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#Transformation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#SecAction">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#RuleMetaData">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A43">
+    <rdf:rest rdf:nodeID="A47"/>
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EMERGENCY</rdf:first>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionExpression.REQUEST_HEADERS.Pragma">
+    <rdfs:label xml:lang="EN">REQUEST_HEADERS.Pragma</rdfs:label>
+    <hasSelectedElement rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Element.Pragma"/>
+    <hasColExpID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">REQUEST_HEADERS.Pragma</hasColExpID>
+    <hasSelectedCollection rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#REQUEST_HEADERS"/>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionExpression"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A51">
+    <owl:unionOf rdf:nodeID="A49"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#ARGS_GET_NAMES">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ARGS_GET_NAMES</rdfs:label>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#RequestCollection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#REQUEST_HEADERS">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">REQUEST_HEADERS</rdfs:label>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#RequestCollection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#AllowAction">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#DisruptiveAction"/>
+    <rdfs:comment xml:lang="en">If phase is associated (i.e. optional) Rule engine will Match Rule in all phases, except the phase given here. If not given the phase, then it will bypass all the phases.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Allow</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#Severity.3">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Severity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TX.cf_injection_score">
+    <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">op_append%{tx.critical_anomaly_score}</hasValue>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#UserDefined"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TIME_HOUR">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TIME_HOUR</rdfs:label>
+    <rdfs:comment xml:lang="en">Hour of the day (0-23)</rdfs:comment>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#TimeVariables"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionExpression.ARGS">
+    <hasColExpID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ARGS</hasColExpID>
+    <rdfs:label xml:lang="EN">ARGS</rdfs:label>
+    <hasSelectedCollection rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#ARGS"/>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionExpression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#escapeSeqDecode">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Transformation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TX.protocol_violation_score">
+    <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">op_append%{tx.notice_anomaly_score}</hasValue>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#UserDefined"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#hasArgumentName">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#SanitiseArg"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionExpression">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Expression"/>
+    <rdfs:comment xml:lang="en"></rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#RedirectAction">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Redirect</rdfs:label>
+    <rdfs:comment xml:lang="en">Redirect request to some other web server</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#DisruptiveAction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#validateUtf8Encoding">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#ValidationOperator"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A52">
+    <rdf:rest rdf:nodeID="A41"/>
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ERROR</rdf:first>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#MATCHED_VAR">
+    <rdfs:comment xml:lang="en">Contents of the last variable that matched</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MATCHED_VAR</rdfs:label>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#StandardVariable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#hasRedirectURL">
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#RedirectAction"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#Prepend">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#DataAction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A53">
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DEBUG</rdf:first>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#Severity.4">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Severity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#initalizeCollection">
+    <rdfs:domain rdf:nodeID="A54"/>
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#SpecialCollection"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#replaceComments">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Transformation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#Setvar">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#VariableAction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TX.var_openrule.idvar_close-WEB_ATTACKfwdslashLDAP_INJECTION-var_openmatched_var_namevar_close">
+    <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">op_equal%{tx.0}</hasValue>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#UserDefined"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#REQUEST_BASENAME">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">REQUEST_BASENAME</rdfs:label>
+    <rdfs:comment xml:lang="en">Request URI basename</rdfs:comment>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#RequestVariables"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#VariableExpression.REQUEST_LINE">
+    <hasVarExpID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">REQUEST_LINE</hasVarExpID>
+    <hasSelectedVariable rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#REQUEST_LINE"/>
+    <rdfs:label xml:lang="EN">REQUEST_LINE</rdfs:label>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#VariableExpression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#Setuid">
+    <rdfs:comment xml:lang="en">SecRule SESSION:user !^$ "phase:2,nolog,pass,setuid:%{SESSION.user},setvar:USER.TIMEOUT=2592000"</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#VariableAction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#AUTH_TYPE">
+    <rdfs:comment xml:lang="en">Authentication type</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AUTH_TYPE</rdfs:label>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#ServerVariables"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#isNegated">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Condition"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TX.var_openrule.idvar_close-PROTOCOL_VIOLATIONfwdslashINVALID_HREQ-var_openmatched_var_namevar_close">
+    <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">op_equal%{matched_var}</hasValue>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#UserDefined"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#rbl">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Operator"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TIME_YEAR">
+    <rdfs:comment xml:lang="en">Year</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TIME_YEAR</rdfs:label>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#TimeVariables"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#hasMessage">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has Message</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:comment xml:lang="en">The message to be displayed when this rule is triggered.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#RuleMetaData"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A48">
+    <rdf:rest rdf:nodeID="A52"/>
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CRITICAL</rdf:first>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#hasDisplayName">
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#User"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#WEBAPPID">
+    <rdfs:comment xml:lang="en">Web application ID associated with current transaction</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WEBAPPID</rdfs:label>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#StandardVariable"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A37">
+    <rdf:rest rdf:nodeID="A53"/>
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">INFO</rdf:first>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#Severity.5">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Severity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#REQUEST_BODY">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">REQUEST_BODY</rdfs:label>
+    <rdfs:comment xml:lang="en">Request body</rdfs:comment>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#RequestVariables"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#log">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Log"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#Element.via">
+    <isElementOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#REQUEST_HEADERS"/>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Element"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TIME_MIN">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TIME_MIN</rdfs:label>
+    <rdfs:comment xml:lang="en">Minute of the hour (0-59)</rdfs:comment>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#TimeVariables"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionExpression.XML">
+    <hasColExpID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XML</hasColExpID>
+    <rdfs:label xml:lang="EN">XML</rdfs:label>
+    <hasSelectedCollection rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#XML"/>
+    <hasSelectedElement rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Element.all_xml_elements"/>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionExpression"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A55">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#RuleGroup"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#REQUEST_LINE">
+    <rdfs:comment xml:lang="en">Request line</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">REQUEST_LINE</rdfs:label>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#RequestVariables"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A4">
+    <rdf:rest rdf:nodeID="A56"/>
+    <rdf:first rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#UserDefined"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#HIGHEST_SEVERITY">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HIGHEST_SEVERITY</rdfs:label>
+    <rdfs:comment xml:lang="en">Highest severity encountered</rdfs:comment>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#StandardVariable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#SanitiseRequestHeader">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#LogAction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#RESPONSE_PROTOCOL">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RESPONSE_PROTOCOL</rdfs:label>
+    <rdfs:comment xml:lang="en">Response protocol</rdfs:comment>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#ResponseVariables"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionExpression.XML.all_xml_elements">
+    <hasSelectedElement rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Element.all_xml_elements"/>
+    <hasColExpID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XML.all_xml_elements</hasColExpID>
+    <hasSelectedCollection rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#XML"/>
+    <rdfs:label xml:lang="EN">XML.all_xml_elements</rdfs:label>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionExpression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionExpression.REQUEST_HEADERS.User-Agent">
+    <hasSelectedElement rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Element.User-Agent"/>
+    <hasSelectedCollection rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#REQUEST_HEADERS"/>
+    <rdfs:label xml:lang="EN">REQUEST_HEADERS.User-Agent</rdfs:label>
+    <hasColExpID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">REQUEST_HEADERS.User-Agent</hasColExpID>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionExpression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#XML">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionVariable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#nolog">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Log"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A56">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#BuiltinVariables"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A57">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#UserDefined"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A50">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#RuleGroup"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#streq">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#StringOperator"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#chain">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#ChainAction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#Element.Content-Length">
+    <isElementOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#REQUEST_HEADERS"/>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Element"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TIME">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TIME</rdfs:label>
+    <rdfs:comment xml:lang="en">Time (HH:MM:SS)</rdfs:comment>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#TimeVariables"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#hasSelectedCollection">
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionVariable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:comment xml:lang="en">null</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionExpression"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#MULTIPART_BOUNDARY_QUOTED">
+    <rdfs:comment xml:lang="en">Multipart parsing error: quoted boundary encountered</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MULTIPART_BOUNDARY_QUOTED</rdfs:label>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#ParsingFlags"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#MULTIPART_DATA_AFTER">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MULTIPART_DATA_AFTER</rdfs:label>
+    <rdfs:comment xml:lang="en">Multipart parsing error: seen data after last boundary</rdfs:comment>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#ParsingFlags"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TX.xss_score">
+    <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">op_append%{tx.critical_anomaly_score}</hasValue>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#UserDefined"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#noauditlog">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#AuditLog"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#hasSeverity">
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#RuleMetaData"/>
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Severity"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TX.rfi_score">
+    <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">op_append%{tx.critical_anomaly_score}</hasValue>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#UserDefined"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#parityZero7bit">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Transformation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#RESPONSE_BODY">
+    <rdfs:comment xml:lang="en">Response body</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RESPONSE_BODY</rdfs:label>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#ResponseVariables"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#Element.Content-Type">
+    <isElementOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#REQUEST_HEADERS"/>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Element"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#ChainRule">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Rule"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A54">
+    <owl:unionOf rdf:nodeID="A58"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#validateDTD">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#ValidationOperator"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#SkipAfter">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#SkipAfterAction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A59">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataRange"/>
+    <owl:oneOf rdf:nodeID="A60"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A61">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataRange"/>
+    <owl:oneOf rdf:nodeID="A62"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#hasSelectedElement">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionExpression"/>
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Element"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#lowercase">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Transformation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#Exec">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#DataAction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#hasLogAction">
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Condition"/>
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#LogAction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#ctl">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#SpecialAction"/>
+    <rdfs:comment xml:lang="en">SecRule REQUEST_CONTENT_TYPE ^text/xml nolog,pass,ctl:requestBodyProcessor=XML</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#Phase">
+    <rdfs:comment xml:lang="en">null</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A58">
+    <rdf:rest rdf:nodeID="A63"/>
+    <rdf:first rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#SecAction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A60">
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</rdf:first>
+    <rdf:rest rdf:nodeID="A64"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#BuiltinVariables">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Variable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#Severity.1">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Severity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionExpression.REQUEST_COOKIES_NAMES">
+    <hasColExpID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">REQUEST_COOKIES_NAMES</hasColExpID>
+    <hasSelectedCollection rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#REQUEST_COOKIES_NAMES"/>
+    <rdfs:label xml:lang="EN">REQUEST_COOKIES_NAMES</rdfs:label>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionExpression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#skip">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#SkipAction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A65">
+    <owl:unionOf rdf:nodeID="A66"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#UnaryOperator">
+    <rdfs:comment xml:lang="en">Unary Operator is applied to the variable</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UnaryOperator</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Operator"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#hasVariableID">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#RuleVariable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#Expression">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#beginsWith">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#StringOperator"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#endsWith">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#StringOperator"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#ARGS_NAMES">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ARGS_NAMES</rdfs:label>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#RequestCollection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#eq">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#NumericOperator"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionExpression.FILES">
+    <rdfs:label xml:lang="EN">FILES</rdfs:label>
+    <hasSelectedCollection rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#FILES"/>
+    <hasColExpID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FILES</hasColExpID>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionExpression"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A64">
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</rdf:first>
+    <rdf:rest rdf:nodeID="A67"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#MULTIPART_BOUNDARY_WHITESPACE">
+    <rdfs:comment xml:lang="en">Multipart parsing error: whitespace in boundary</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MULTIPART_BOUNDARY_WHITESPACE</rdfs:label>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#ParsingFlags"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#base64Decode">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Transformation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#hasFirst">
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Sequence"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A63">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Rule"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#MULTIPART_LF_LINE">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MULTIPART_LF_LINE</rdfs:label>
+    <rdfs:comment xml:lang="en">Multipart parsing error: LF line ending detected</rdfs:comment>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#ParsingFlags"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A66">
+    <rdf:rest rdf:nodeID="A57"/>
+    <rdf:first rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Condition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#hasLogData">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Condition"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#hasStatusCode">
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Status"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#REQUEST_COOKIES">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">REQUEST_COOKIES</rdfs:label>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#RequestCollection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#RESPONSE_STATUS">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RESPONSE_STATUS</rdfs:label>
+    <rdfs:comment xml:lang="en">Response status code</rdfs:comment>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#ResponseVariables"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TX.id">
+    <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">op_equal%{rule.id}</hasValue>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#UserDefined"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A68">
+    <rdf:rest rdf:nodeID="A69"/>
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urlDecode</rdf:first>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#ExpireVar">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#VariableAction"/>
+    <rdfs:comment xml:lang="en">SecRule ARGS attack "phase:2,log,block,setvar:IP.blocked,expirevar:IP.blocked=60,\
+msg:'Blocking IP address for 60s'"</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#replaceNulls">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Transformation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#REQUEST_METHOD">
+    <rdfs:comment xml:lang="en">Request method</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">REQUEST_METHOD</rdfs:label>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#RequestVariables"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#VariableExpression.REQUEST_URI">
+    <hasSelectedVariable rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#REQUEST_URI"/>
+    <rdfs:label xml:lang="EN">REQUEST_URI</rdfs:label>
+    <hasVarExpID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">REQUEST_URI</hasVarExpID>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#VariableExpression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#UserDefined">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Variable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#WEBSERVER_ERROR_LOG">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WEBSERVER_ERROR_LOG</rdfs:label>
+    <rdfs:comment xml:lang="en">Error messages generated by Apache during current transaction</rdfs:comment>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#StandardVariable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#Element.Host">
+    <isElementOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#REQUEST_HEADERS"/>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Element"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#hasGroupSpecification">
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#RuleGroup"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasSpecification</rdfs:label>
+    <rdfs:comment xml:lang="en">Defines Policy Specification</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A70">
+    <rdf:rest rdf:nodeID="A19"/>
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">compressWhitespace</rdf:first>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#jsDecode">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Transformation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#SCRIPT_MODE">
+    <rdfs:comment xml:lang="en">Script permissions</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCRIPT_MODE</rdfs:label>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#ServerVariables"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionExpression.REQUEST_COOKIES">
+    <rdfs:label xml:lang="EN">REQUEST_COOKIES</rdfs:label>
+    <hasSelectedCollection rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#REQUEST_COOKIES"/>
+    <hasColExpID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">REQUEST_COOKIES</hasColExpID>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionExpression"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A0">
+    <owl:oneOf rdf:nodeID="A71"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataRange"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#hasVarExpID">
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#VariableExpression"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A67">
+    <rdf:rest rdf:nodeID="A72"/>
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</rdf:first>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#setPhase">
+    <rdfs:range rdf:nodeID="A23"/>
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#AllowAction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#belongsTo">
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Resource"/>
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Rule"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionExpression.negation.REQUEST_HEADERS.Pragma">
+    <rdfs:label xml:lang="EN">negation.REQUEST_HEADERS.Pragma</rdfs:label>
+    <hasColExpID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">negation.REQUEST_HEADERS.Pragma</hasColExpID>
+    <hasSelectedCollection rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#REQUEST_HEADERS"/>
+    <hasSelectedElement rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Element.Pragma"/>
+    <hasUnaryOperator rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#negation"/>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionExpression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TX.anomaly_score">
+    <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">op_append%{tx.notice_anomaly_score}</hasValue>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#UserDefined"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A69">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">urlDecodeUni</rdf:first>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TX.var_opentx.msgvar_close-WEB_ATTACKfwdslashSQLI-var_openmatched_var_namevar_close">
+    <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">op_equal%{tx.0}</hasValue>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#UserDefined"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#parityEven7bit">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Transformation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#Element.Content-Encoding">
+    <isElementOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#REQUEST_HEADERS"/>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Element"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#hasTransformation">
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#t"/>
+    <rdfs:range rdf:nodeID="A61"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionExpression.REQUEST_HEADERS.Content-Length">
+    <hasSelectedElement rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Element.Content-Length"/>
+    <rdfs:label xml:lang="EN">REQUEST_HEADERS.Content-Length</rdfs:label>
+    <hasSelectedCollection rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#REQUEST_HEADERS"/>
+    <hasColExpID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">REQUEST_HEADERS.Content-Length</hasColExpID>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionExpression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TIME_MON">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TIME_MON</rdfs:label>
+    <rdfs:comment xml:lang="en">Month of the year (0-11)</rdfs:comment>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#TimeVariables"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A71">
+    <rdf:rest rdf:nodeID="A73"/>
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">auditEngine</rdf:first>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#REQUEST_PROTOCOL">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">REQUEST_PROTOCOL</rdfs:label>
+    <rdfs:comment xml:lang="en">Request protocol</rdfs:comment>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#RequestVariables"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#hasSemRuleID">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Rule"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#hasAppendedString">
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Append"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#SessionCollection">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#SpecialCollection"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A20">
+    <owl:unionOf rdf:nodeID="A74"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#VariableAction">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#NonDisruptiveAction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#Element.all_xml_elements">
+    <isElementOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#XML"/>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Element"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TX.updf_xss_score">
+    <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">op_append%{tx.critical_anomaly_score}</hasValue>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#UserDefined"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#User">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#hasResponseHeaderName">
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#SanitiseResponseHeader"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionVariable">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Variable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#SCRIPT_GROUPNAME">
+    <rdfs:comment xml:lang="en">Script group name</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCRIPT_GROUPNAME</rdfs:label>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#ServerVariables"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A62">
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">base64Decode</rdf:first>
+    <rdf:rest rdf:nodeID="A75"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#trimLeft">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Transformation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A73">
+    <rdf:rest rdf:nodeID="A76"/>
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">auditLogParts</rdf:first>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#Element.id">
+    <isElementOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#ARGS"/>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Element"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#REQUEST_COOKIES_NAMES">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">REQUEST_COOKIES_NAMES</rdfs:label>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#RequestCollection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TX.var_openrule.idvar_close-WEB_ATTACKfwdslashUPDF_XSS-var_openmatched_var_namevar_close">
+    <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">op_equal%{tx.0}</hasValue>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#UserDefined"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A74">
+    <rdf:rest rdf:nodeID="A55"/>
+    <rdf:first rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Rule"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#removeWhitespace">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Transformation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#inspectFile">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#FileOperator"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#Sequence.Rule">
+    <hasMaximum rdf:datatype="http://www.w3.org/2001/XMLSchema#int">100000</hasMaximum>
+    <hasLast rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</hasLast>
+    <hasFirst rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</hasFirst>
+    <hasConcept rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rule</hasConcept>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Sequence"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionExpression.negation.REQUEST_HEADERS.Content-Length">
+    <hasColExpID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">negation.REQUEST_HEADERS.Content-Length</hasColExpID>
+    <rdfs:label xml:lang="EN">negation.REQUEST_HEADERS.Content-Length</rdfs:label>
+    <hasSelectedElement rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Element.Content-Length"/>
+    <hasSelectedCollection rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#REQUEST_HEADERS"/>
+    <hasUnaryOperator rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#negation"/>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionExpression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#isVariableOf">
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#SpecialCollection"/>
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#UserDefined"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A75">
+    <rdf:rest rdf:nodeID="A70"/>
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">base64Encode</rdf:first>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#isElementOf">
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Element"/>
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionVariable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TX.command_injection_score">
+    <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">op_append%{tx.critical_anomaly_score}</hasValue>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#UserDefined"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#Element.Referer">
+    <isElementOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#REQUEST_HEADERS"/>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Element"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#SpecialAction">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#NonDisruptiveAction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#REMOTE_PORT">
+    <rdfs:comment xml:lang="en">Remote port</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">REMOTE_PORT</rdfs:label>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#ServerVariables"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A76">
+    <rdf:rest rdf:nodeID="A45"/>
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">debugLogLevel</rdf:first>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A31">
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">normalisepath</rdf:first>
+    <rdf:rest rdf:nodeID="A77"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#Variable">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#ProxyAction">
+    <rdfs:comment xml:lang="en">Proxy request to a backend web server</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#DisruptiveAction"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Proxy Action</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TX.var_openrule.idvar_close-WEB_ATTACKfwdslashCOMMAND_INJECTION-var_openmatched_var_namevar_close">
+    <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">op_equal%{tx.0}</hasValue>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#UserDefined"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#negation">
+    <rdfs:comment xml:lang="en">Negate the rule targetwithin the condition</rdfs:comment>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#UnaryOperator"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#drop">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drop</rdfs:label>
+    <rdfs:comment xml:lang="en">Close network connection</rdfs:comment>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#DisruptiveAction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#sanitiseMatched">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#LogAction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TX.ldap_injection_score">
+    <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">op_append%{tx.critical_anomaly_score}</hasValue>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#UserDefined"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A78">
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">auditlog</rdf:first>
+    <rdf:rest rdf:nodeID="A79"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#Append">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#DataAction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#hasRevisionNumber">
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#RuleMetaData"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment xml:lang="en">Updates Revision/ Version of a Rule</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has Revision Number</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#RuleVariable">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#SESSIONID">
+    <rdfs:comment xml:lang="en">Session ID associated with current transaction</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SESSIONID</rdfs:label>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#StandardVariable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#haveTransformation">
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#RuleVariable"/>
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Transformation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TX.1">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#BuiltinVariables"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A77">
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">normalisePathWin</rdf:first>
+    <rdf:rest rdf:nodeID="A80"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#hasValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:nodeID="A65"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#MULTIPART_SEMICOLON_MISSING">
+    <rdfs:comment xml:lang="en">Multipart parsing error: missing semicolon before boundary</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MULTIPART_SEMICOLON_MISSING</rdfs:label>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#ParsingFlags"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#trim">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Transformation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#Setsid">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#VariableAction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#RegexOperator">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Operator"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#VariableExpression.REQUEST_BODY">
+    <rdfs:label xml:lang="EN">REQUEST_BODY</rdfs:label>
+    <hasVarExpID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">REQUEST_BODY</hasVarExpID>
+    <hasSelectedVariable rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#REQUEST_BODY"/>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#VariableExpression"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A79">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">noauditlog</rdf:first>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#executedInPhase">
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Phase"/>
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Rule"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#removeNulls">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Transformation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#SCRIPT_BASENAME">
+    <rdfs:comment xml:lang="en">Script basename</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCRIPT_BASENAME</rdfs:label>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#ServerVariables"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#UserCollection">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#SpecialCollection"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TX.var_openrule.idvar_close-WEB_ATTACKfwdslashCF_INJECTION-var_openmatched_var_namevar_close">
+    <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">op_equal%{tx.0}</hasValue>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#UserDefined"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TX.0">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#BuiltinVariables"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#editedBy">
+    <rdfs:domain rdf:nodeID="A81"/>
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#User"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionExpression.negation.REQUEST_HEADERS.Referer">
+    <hasColExpID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">negation.REQUEST_HEADERS.Referer</hasColExpID>
+    <hasSelectedElement rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Element.Referer"/>
+    <rdfs:label xml:lang="EN">negation.REQUEST_HEADERS.Referer</rdfs:label>
+    <hasUnaryOperator rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#negation"/>
+    <hasSelectedCollection rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#REQUEST_HEADERS"/>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionExpression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#Element.Connection">
+    <isElementOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#REQUEST_HEADERS"/>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Element"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TX.4">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#BuiltinVariables"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A80">
+    <rdf:rest rdf:nodeID="A82"/>
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">replaceComments</rdf:first>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A83">
+    <rdf:rest rdf:nodeID="A84"/>
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">log</rdf:first>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#RequestVariables">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#StandardVariable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#allow">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">allow</rdfs:label>
+    <rdfs:comment xml:lang="en">Stop processing of one or more remaining phases syntax allow:phase</rdfs:comment>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#AllowAction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#initializedWith">
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#SpecialCollection"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#skippedRules">
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#SkipAction"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Skipped Rules</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:comment xml:lang="en">It shows, how many number of rules will be skipped.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#lt">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#NumericOperator"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A82">
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">replaceNulls</rdf:first>
+    <rdf:rest rdf:nodeID="A85"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#hasRuleID">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has Rule ID</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment xml:lang="en">Uniquely identifies a Rule</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#RuleMetaData"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#hasRequestHeaderName">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#SanitiseRequestHeader"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TX.var_openrule.idvar_close-WEB_ATTACKfwdslashRFI-var_openmatched_var_namevar_close">
+    <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">op_equal%{tx.0}</hasValue>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#UserDefined"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#FILE_SIZES">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FILE_SIZES</rdfs:label>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#RequestCollection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#compressWhiteSpace">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Transformation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TX.pm_xss_score">
+    <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">op_append%{tx.critical_anomaly_score}</hasValue>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#UserDefined"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TX.3">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#BuiltinVariables"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionExpression.ARGS_NAMES">
+    <hasColExpID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ARGS_NAMES</hasColExpID>
+    <rdfs:label xml:lang="EN">ARGS_NAMES</rdfs:label>
+    <hasSelectedCollection rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#ARGS_NAMES"/>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionExpression"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A84">
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nolog</rdf:first>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#ARGS">
+    <rdfs:comment xml:lang="en">Request parameters (read-only collection)(means all arguments including the POST
+Payload)</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ARGS</rdfs:label>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#RequestCollection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#SkipFlowAction">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SkipFlowAction</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#FlowAction"/>
+    <rdfs:comment xml:lang="en">SkipFlow actions can only be applied on rules that belong to the same group</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A86">
+    <owl:oneOf rdf:nodeID="A78"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataRange"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TX.2">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#BuiltinVariables"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#haveExpressions">
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Expression"/>
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#RuleVariable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A85">
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sha1</rdf:first>
+    <rdf:rest rdf:nodeID="A68"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#FileOperator">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Operator"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TX.var_openrule.idvar_close-WEB_ATTACKfwdslashRESTRICTED_SQL_CHARS-var_openmatched_var_namevar_close">
+    <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">op_equal%{tx.0}</hasValue>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#UserDefined"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#auditlog">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#AuditLog"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#RESPONSE_HEADERS_NAMES">
+    <rdfs:comment xml:lang="en">Response headers’ names (read-only collection)</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RESPONSE_HEADERS_NAMES</rdfs:label>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#ResponseCollection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#Resource">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#sha1">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Transformation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A34">
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Response</rdf:first>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#Action">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#PATH_INFO">
+    <rdfs:comment xml:lang="en">Extra path information</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATH_INFO</rdfs:label>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#RequestVariables"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TX.6">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#BuiltinVariables"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#normalisePathWin">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Transformation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#SCRIPT_USERNAME">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCRIPT_USERNAME</rdfs:label>
+    <rdfs:comment xml:lang="en">Script user name</rdfs:comment>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#ServerVariables"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#hasMetaData">
+    <rdfs:comment xml:lang="en">Connect the rule with its meta data object. Contains Meta data like, severity, ruleID etc</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has associated meta data</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Rule"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#RuleMetaData"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#RuleGroup">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TX.automation_score">
+    <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">op_append%{tx.warning_anomaly_score}</hasValue>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#UserDefined"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A46">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DEBUG</rdf:first>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A72">
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</rdf:first>
+    <rdf:rest rdf:nodeID="A87"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionExpression.REQUEST_HEADERS_NAMES">
+    <rdfs:label xml:lang="EN">REQUEST_HEADERS_NAMES</rdfs:label>
+    <hasSelectedCollection rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#REQUEST_HEADERS_NAMES"/>
+    <hasColExpID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">REQUEST_HEADERS_NAMES</hasColExpID>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionExpression"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A36">
+    <owl:unionOf rdf:nodeID="A88"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A89">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#RuleGroup"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#ChainAction">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChainFlowAction</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#FlowAction"/>
+    <rdfs:comment xml:lang="en">Connect two or more rules into a single logical rule</rdfs:comment>
+    <rdfs:comment xml:lang="en">Their can be only one Disruptive action and Metadata action for the entire chain and by convention these action must be specified in the first rule of the chain. In rule chaining non-disruptive action will always execute regarding the rule is a part of chain but disruptive action will not execute until the last rule</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#t">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#SpecialAction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A90">
+    <owl:oneOf rdf:nodeID="A83"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataRange"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#DataAction">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#NonDisruptiveAction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TX.5">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#BuiltinVariables"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#RequestCollection">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionVariable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#ResponseVariables">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#StandardVariable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionExpression.ARGS.id">
+    <hasSelectedElement rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Element.id"/>
+    <hasSelectedCollection rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#ARGS"/>
+    <rdfs:label xml:lang="EN">ARGS.id</rdfs:label>
+    <hasColExpID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ARGS.id</hasColExpID>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#CollectionExpression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#deprecateVar">
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#SecAction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#hasTag">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has Tag</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#RuleMetaData"/>
+    <rdfs:comment xml:lang="en">A short description about a Rule in terms of comments.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A81">
+    <owl:unionOf rdf:nodeID="A91"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A88">
+    <rdf:rest rdf:nodeID="A89"/>
+    <rdf:first rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Rule"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#hasMetaDataID">
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#RuleMetaData"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#hasLast">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Sequence"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A87">
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</rdf:first>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#gt">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#NumericOperator"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#SanitiseArg">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#LogAction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#StandardVariable">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Variable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#RESPONSE_CONTENT_LENGTH">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RESPONSE_CONTENT_LENGTH</rdfs:label>
+    <rdfs:comment xml:lang="en">Response content length</rdfs:comment>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#ResponseVariables"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TX.var_openrule.idvar_close-POLICYfwdslashIP_HOST-var_openmatched_var_namevar_close">
+    <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">op_equal%{matched_var}</hasValue>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#UserDefined"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TX.8">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#BuiltinVariables"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#hasGroup">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">implementPolicy</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Rule"/>
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#RuleGroup"/>
+    <rdfs:comment xml:lang="en">Multiple Rules are group together implement a Security Policy</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#admin">
+    <hasDisplayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">admin</hasDisplayName>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#User"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#urlDecode">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Transformation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#ARGS_POST">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ARGS_POST</rdfs:label>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#RequestCollection"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A91">
+    <rdf:rest rdf:nodeID="A92"/>
+    <rdf:first rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Rule"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#urlDecodeUni">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Transformation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#contains">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#StringOperator"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#GeoCollection">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#SpecialCollection"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#VariableExpression.TX.1">
+    <hasSelectedVariable rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#TX.1"/>
+    <hasVarExpID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TX.1</hasVarExpID>
+    <rdfs:label xml:lang="EN">TX.1</rdfs:label>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#VariableExpression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#FILES_COMBINED_SIZE">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FILES_COMBINED_SIZE</rdfs:label>
+    <rdfs:comment xml:lang="en">Combined size of all uploaded files</rdfs:comment>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#RequestVariables"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TX.var_openrule.idvar_close-WEB_ATTACKfwdslashXSS-var_openmatched_var_namevar_close">
+    <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">op_equal%{tx.0}</hasValue>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#UserDefined"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#Sequence.RuleVariable">
+    <hasMaximum rdf:datatype="http://www.w3.org/2001/XMLSchema#int">100000</hasMaximum>
+    <hasFirst rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</hasFirst>
+    <hasConcept rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RuleVariable</hasConcept>
+    <hasLast rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</hasLast>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Sequence"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#XMLNAction">
+    <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#DataAction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#hasSelectedVariable">
+    <rdfs:range rdf:nodeID="A11"/>
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#VariableExpression"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#validateSchema">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#ValidationOperator"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TX.7">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#BuiltinVariables"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#TIME_SEC">
+    <rdfs:comment xml:lang="en">Second of the minute (0-59)</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TIME_SEC</rdfs:label>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#TimeVariables"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#hasDisruptiveAction">
+    <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#DisruptiveAction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#Rule"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#rx">
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#RegexOperator"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#VariableExpression.TX.0">
+    <rdfs:label xml:lang="EN">TX.0</rdfs:label>
+    <hasSelectedVariable rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#TX.0"/>
+    <hasVarExpID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TX.0</hasVarExpID>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#VariableExpression"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A92">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#RuleGroup"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#VariableExpression.negation.HIGHEST_SEVERITY">
+    <hasVarExpID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">negation.HIGHEST_SEVERITY</hasVarExpID>
+    <hasUniaryOperator rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#negation"/>
+    <rdfs:label xml:lang="EN">negation.HIGHEST_SEVERITY</rdfs:label>
+    <hasSelectedVariable rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#HIGHEST_SEVERITY"/>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#VariableExpression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1326263783.owl#REQUEST_FILENAME">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">REQUEST_FILENAME</rdfs:label>
+    <rdfs:comment xml:lang="en">Request URI filename/path</rdfs:comment>
+    <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1326263783.owl#RequestVariables"/>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,116 @@
+/*
+ * This file is part of WebSiren.
+ *
+ *  WebSiren is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+
+ *  WebSiren is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with WebSiren.  If not, see <http://www.gnu.org/licenses/>.
+ */
+@CHARSET "ISO-8859-1";
+body {
+	margin-top: 50px;
+	margin-left:450px;
+	margin-right: 450px;
+	margin-bottom:50px;
+	padding: 10px;
+	background: #FAFBFF;
+	font-family: Tahoma, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #666666;
+}
+#login_box
+{
+	margin:50px auto 0px auto;width:450px;
+}
+#login_header
+{
+	width:100%;background:url(../images/bg1.jpg) repeat-x;text-align:center;height:22px;font-size:18px;font-family:Tahoma, Helvetica, sans-serif;padding-top:10px;border:#BFD8EE solid 1px;border-bottom:#5C8CB2 1px solid;color:#5A768C;-moz-border-radius-topleft:15px;-moz-border-radius-topright:15px;
+	-webkit-border-top-left-radius:15px;-webkit-border-top-right-radius:15px;border-top-left-radius:15px;border-top-right-radius:15px;
+}
+#login_footer
+{
+	width:100%;background:url(../images/bg2.jpg) repeat-x;text-align:center;height:22px;padding-top:10px;border:#BFD8EE solid 1px;border-top:#5C8CB2 1px solid;color:#5A768C;-moz-border-radius-bottomleft:15px;-moz-border-radius-bottomright:15px;
+	-webkit-border-bottom-left-radius:15px;-webkit-border-bottom-right-radius:15px;border-bottom-left-radius:15px;border-bottom-right-radius:15px;height:39px;
+}
+#form_val
+{
+	width:430px;border-left:#BFD8EE solid 1px;border-right:#BFD8EE solid 1px;padding:10px;
+}
+#login_box input[type=text], #login_box input[type=password] {
+	
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border:1px solid #1A5B71;
+	font-size:14px;
+	margin:0 0 0px 5px;
+	padding:5px;
+	width:200px;
+	font-family:Tahoma, Helvetica, sans-serif;
+	color:#1A5B71;
+}
+#login_box .label
+{
+	width:140px;height:25px;float:left;padding:17px 0px 0px 10px;font-size:14px; font-family:Tahoma, Helvetica, sans-serif;
+	color:#1A5B71;font-weight:bold;
+}
+#login_box .control
+{
+	width:212px;height:32px;float:left;padding:10px;
+}
+.send_button {
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	background: #002E8A;
+	border:1px solid #004CA2;
+	color:#fff;
+	text-shadow:0 -1px 0 #004CA2;
+	padding:4px 10px 5px;
+	font-size:11px;
+	margin:0 5px 0 5px;
+	font-weight:bold;
+}
+
+.send_button:focus,.send_button:hover {
+	background-position:0 -5px;
+	cursor:pointer;
+}
+#msgbox
+{
+	display: none;
+}
+.myerror
+{
+	margin: 5px auto;
+	background: red;
+	border: 1px #FF0000 solid;
+	padding:5px;
+	color:#FF0000;
+	font-size:12px;
+	width:400px;
+	min-height:0px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	text-align: center;
+}
+.myinfo
+{
+	margin: 5px auto;
+	background:#d6e3f5;
+	border: 1px #0010ac solid;
+	padding:5px;
+	color:#0010ac;
+	font-size:12px;
+	width:400px;
+	min-height:0px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	text-align: center;
+}

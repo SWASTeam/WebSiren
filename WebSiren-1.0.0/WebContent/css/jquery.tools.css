@@ -1,0 +1,944 @@
+/*
+ * This file is part of WebSiren.
+ *
+ *  WebSiren is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+
+ *  WebSiren is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with WebSiren.  If not, see <http://www.gnu.org/licenses/>.
+ */
+@CHARSET "windows-1256";
+
+/* root element for accordion. decorated with rounded borders and gradient background image */
+#accordion {
+	font-family:font:  normal 14px serif;
+   	background: url("../images/accordian.png") 100 0;
+    width: 100%;
+    -background:#666;
+    margin: 10px auto;
+	height: 250px;
+}
+
+/* accordion header */
+#accordion h2 {
+	font-size: 13px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000; 
+   /*  background: url("../images/accordian.png") 0 -90px; */
+    line-height: 14px;
+    margin:0;
+    padding:5px 15px;
+    font-weight:normal;
+    cursor:pointer;
+}
+
+/* currently active header 
+#accordion h2.current {
+    cursor:default;
+    background-color:#333;
+}
+*/
+/* accordion pane */
+#accordion .pane {
+	font:  normal 14px serif;
+	background-color:#F9F9F9;/
+    display:none;
+    max-height:200px;
+    padding:1px 5px 5px 5px;
+    color:#fff;
+    font-size:12px;
+}
+
+/* a title inside pane */
+#accordion .pane h3 {
+	font:  normal 14px Arial, Helvetica, sans-serif ;
+    font-weight:normal;
+    margin:0;
+    color:#999;
+}
+ /* tooltip styling. by default the element to be styled is .tooltip  */
+.tooltip {
+    display:none;
+    background-color:#ffa;
+    border:1px solid #cc9;
+    padding:3px;
+    font-size:13px;
+    -moz-box-shadow: 2px 2px 11px #666;
+    -webkit-box-shadow: 2px 2px 11px #666;
+}
+
+/*
+* Tab styling 
+*/
+/* root element for tabs  */
+
+ul.css-tabs {
+    margin:0 !important;
+    padding:0;
+    height:30px;
+    border-bottom:1px solid #666;
+}
+
+/* single tab */
+ul.css-tabs li {
+    float:left;
+    padding:0;
+    margin:0;
+    list-style-type:none;
+}
+
+/* link inside the tab. uses a background image */
+ul.css-tabs a {
+
+    float:left;
+    font-size:13px;
+    display:block;
+    padding:5px 30px;
+    text-decoration:none;
+    border:1px solid #666; 
+    border-bottom:0px;
+    height:18px;
+    width: 60px;
+    background-color:#efefef;
+    /* background: url("../images/blue.png") -420px 0 repeat;  */
+    color:#777;
+    
+    text-transform: uppercase;
+	text-align: center;
+	letter-spacing: .05em;
+    position:relative;
+   /*  top:1px; */
+    outline:0;
+    -moz-border-radius:4px 4px 0 0;
+}
+
+ul.css-tabs a:hover {
+    background-color:#F7F7F7;
+    /*  background: url("../images/blue.png") -420px 60px repeat;  */
+    color:#0D96CD;
+}
+
+/* selected tab */
+ul.css-tabs a.current {
+
+ 
+   /*  background: url("../images/blue.png") -420px 30px repeat; */
+  background-color:#676767;
+    border-bottom:1px solid #ddd;
+    color:#fff;
+    cursor:default;
+}
+
+
+/* tab pane */
+.css-panes div {
+	
+/* 	display:none;
+    min-height:150px;
+    background-color: #fff;
+	color: black;
+	text-align: left;
+	 */
+    display:none;
+    border:1px solid #666;
+    border-width:0 1px 1px 1px;
+    min-height:150px;
+    padding:15px 20px;
+    background-color:#fff;
+    color: #575757;
+}
+
+  /* the overlayed element */
+.apple_overlay {
+    display:none;
+    background-image: #FFFFFF;
+    width:70%;
+    padding:35px;
+}
+ 
+/* default close button positioned on upper right corner */
+.apple_overlay .close {
+    background-image:url(../images/icons/close.png);
+    position:absolute; 
+    right:13px; 
+    top:15px;
+    cursor:pointer;
+    height:35px;
+    width:35px;
+    z-index: 3;
+}
+   /* use a semi-transparent image for the overlay */
+  #overlay {
+    background-image:#fff;
+    height:100%;
+	opacity:1;
+  }
+  /* container for external content. uses vertical scrollbar, if needed */
+  div.contentWrap {
+    padding: 0; 
+    width: 100%;
+    height:600px;
+    overflow-y:auto;
+	opacity:1;
+	border:2px solid #333;
+    -moz-box-shadow: 0 0 50px #707070;
+    -webkit-box-shadow: 0 0 50px #707070;
+    background: #FFFFFF;
+  }
+  /*
+  * CSS Styles for sliding form tabs
+  */
+/* root element for tabs  */
+ul.form-tabs {
+    margin:0 !important;
+    padding:0;
+    height:30px;
+    border-bottom:1px solid #666;
+}
+
+/* single tab */
+ul.form-tabs li {
+    float:left;
+    padding:0;
+    margin:0;
+    list-style-type:none;
+}
+
+/* link inside the tab. uses a background image */
+ul.form-tabs a {
+    float:left;
+    font-size:13px;
+    display:block;
+    padding:5px 30px;
+    text-decoration:none;
+/*     border:1px solid #666; */
+    border-bottom:0px;
+    height:18px;
+    width: 160px;
+    background-color:#FFFFFF;
+    color:#777;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: .05em;
+    position:relative;
+    top:1px;
+    outline:0;
+    -moz-border-radius:4px 4px 0 0;
+}
+
+ul.form-tabs a:hover {
+    color:#0D96CD;
+}
+
+/* selected tab */
+ul.form-tabs a.current {
+    background-color:#369;
+    border-bottom:1px solid #ddd;
+    color:#fff;
+    cursor:default;
+}
+
+
+/* tab pane */
+.form-panes div {
+   /*  display:none;
+    min-height:90%; */
+    display:none;
+    min-height:150px;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+ .file_overlay {
+ 
+    display:none;
+    left:50%;
+    top: 100px;
+    background-image: #FFFFFF;
+    padding:35px;
+}
+ 
+/* default close button positioned on upper right corner */
+.file_overlay .close {
+    background-image:url(../images/icons/close.png);
+    position:absolute; 
+    right:20px; 
+    top:15px;
+    cursor:pointer;
+    height:35px;
+    width:35px;
+}
+ #fileOverlay {
+    background-image:#fff;
+    height:300px;
+	opacity:1;
+  }
+  /* container for external content. uses vertical scrollbar, if needed */
+  div.fileUpload {
+  
+  	background-color:white;
+    padding: 10px 5px 20px 5px; 
+    width:  450px;
+    height:200px;
+    overflow:auto;
+	opacity:1;
+	border:2px solid #333;
+	/* border-radius:6px;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px; */
+    -moz-box-shadow: 0 0 50px #707070;
+    -webkit-box-shadow: 0 0 50px #707070;
+  }
+
+ #fileLoader p{
+  	padding: 50px 10px 5px 10px; 
+    background-color:#fff;
+    
+  }
+  
+  #fileLoader input#file{
+
+    margin:5px 7px 10px 7px;
+    padding:2px 1px 2px 1px;
+    background-color:white;
+    
+  }
+   #fileLoader input#upload{
+
+    margin:5px 7px 10px 7px;
+    padding:5px 20px 5px 20px;
+    
+  }
+
+  #progressBar{
+  width:25px;
+  min-height:25px;
+  color:white;
+  margin-left:30px;
+  background:url('../images/loader.gif') no-repeat left; 
+   }
+
+ #fileLoader legend{
+ 	
+    color:#ffffff;
+    -moz-box-shadow:0px 0px 3px #aaa;
+    -webkit-box-shadow:0px 0px 3px #aaa;
+    box-shadow:0px 0px 3px #aaa;
+    background-color:#336699;
+    text-shadow: 0 1px 1px #777;
+  	text-align:center;
+    font-size:24px;
+    font-weight:normal;
+    float:left;
+    width:100%;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border:1px solid #d9d9d9;
+  }
+  
+ .group_overlay {
+ 	width:  500px;
+    height:250px;
+    display:none;
+    left:50%;
+    top: 100px;
+    background-image: #FFFFFF;
+    padding:35px;
+}
+ 
+/* default close button positioned on upper right corner */
+.group_overlay .close {
+    background-image:url(../images/icons/close.png);
+    position:absolute; 
+    right:20px; 
+    top:15px;
+    cursor:pointer;
+    height:35px;
+    width:35px;
+}
+ #groupOverlay {
+    background-image:#fff;
+   /*  height:300px; */
+	opacity:1;
+  }
+
+  div.addRuleGroup {
+  
+  	background-color:white;
+    padding: 10px 5px 20px 5px; 
+    overflow:auto;
+	opacity:1;
+	border:2px solid #333;
+/* 	border-radius:6px;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px; */
+    -moz-box-shadow: 0 0 50px #707070;
+    -webkit-box-shadow: 0 0 50px #707070;
+  }
+  #newGroup{
+  position:relative;
+    width:99.9%;
+    height:100%;
+    font-size:13px;
+    background: #FFFFFF;
+    font-family:serif;
+  }
+  
+  #editRuleGroup{
+   position:relative;
+    width:99.9%;
+    height:100%;
+    font-size:13px;
+    background: #FFFFFF;
+    font-family:serif;
+  }
+  #group{
+  overflow: hidden;
+  }
+  
+  #createGroup{
+  	position:relative;
+	text-align:left;
+    color:#ffffff;
+    font-size:22px;
+    font-weight:bold;
+    float:left;
+    width:97%;
+    padding:5px 0px 5px 20px;
+    margin:4px 4px 16px 4px;
+     -moz-box-shadow:0px 0px 3px #aaa;
+    -webkit-box-shadow:0px 0px 3px #aaa;
+    box-shadow:0px 0px 3px #aaa;
+    background:#336699;
+    text-shadow: 0 1px 1px #777;
+  }
+   #group fieldset {
+	border: none;
+	background: #F0F8FF;
+    border-top: 1px solid #63B8FF;
+    border-bottom: 1px solid #63B8FF;
+    padding-bottom:20px; 
+    margin: 2px 4px 2px 5px;
+  
+
+}
+  #group fieldset p {
+	display: inline-block;
+	float:left;
+	margin:5px 5%;
+    background-color:#F9F9F9;
+    border:1px solid #fff;
+    width:90%;
+    padding: 7px 10px;
+    margin-top: 5px;
+    margin-left: 2.5%;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow:0px 0px 3px #aaa;
+    -webkit-box-shadow:0px 0px 3px #aaa;
+    box-shadow:0px 0px 3px #aaa;
+}
+ #group fieldset p label{
+	float:left;
+	width:30%;
+   /*  text-align:right; */
+    margin-right:10px;
+    line-height:26px;
+    color:#666;
+    text-shadow:1px 1px 1px #fff;
+    font-weight:bold;
+}
+
+#group  fieldset p input:not([type=radio]), 
+ #group fieldset p textarea{
+    background: #ffffff;
+    border: 1px solid #ddd;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    outline: none;
+    padding: 5px;
+    width: 50%;
+}
+
+#submitGroup{
+
+	display: inline-block;
+	float: right;
+	border:none;
+	outline:none;
+	text-decoration: none;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color: #ffffff;
+	text-align:center;
+    padding: 3px 25px;
+    text-shadow: 0 1px 1px #777;
+    font-weight:bold;
+    font-family:serif;
+    font-size:17px;
+    -moz-box-shadow:0px 0px 3px #aaa;
+    -webkit-box-shadow:0px 0px 3px #aaa;
+    box-shadow:0px 0px 3px #aaa;
+    background:#336699;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    cursor: pointer;
+
+}
+
+/*
+*
+* For Translator Overlay
+*/
+#fileloader{
+	 position:relative;
+    width:99.9%;
+    height:100%;
+    font-size:13px;
+    background: #FFFFFF;
+    font-family:serif;
+}
+
+#file{
+	 overflow: hidden;
+}
+
+#fileUpload{
+position:relative;
+	text-align:left;
+    color:#ffffff;
+    font-size:22px;
+    font-weight:bold;
+    float:left;
+    width:97%;
+    padding:5px 0px 5px 20px;
+    margin:4px 4px 16px 4px;
+     -moz-box-shadow:0px 0px 3px #aaa;
+    -webkit-box-shadow:0px 0px 3px #aaa;
+    box-shadow:0px 0px 3px #aaa;
+    background:#336699;
+    text-shadow: 0 1px 1px #777;	
+}
+#file fieldset {
+	border: none;
+	background: #F0F8FF;
+    border-top: 1px solid #63B8FF;
+    border-bottom: 1px solid #63B8FF;
+    padding-bottom:20px; 
+    margin: 2px 4px 2px 5px;
+  
+
+}
+  #file fieldset p {
+	display: inline-block;
+	float:left;
+	margin:5px 5%;
+    background-color:#F9F9F9;
+    border:1px solid #fff;
+    width:90%;
+    padding: 7px 10px;
+    margin-top: 5px;
+    margin-left: 2.5%;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow:0px 0px 3px #aaa;
+    -webkit-box-shadow:0px 0px 3px #aaa;
+    box-shadow:0px 0px 3px #aaa;
+}
+ #file fieldset p label{
+	float:left;
+	width:30%;
+   /*  text-align:right; */
+    margin-right:10px;
+    line-height:26px;
+    color:#666;
+    text-shadow:1px 1px 1px #fff;
+    font-weight:bold;
+}
+
+#file  fieldset p input:not([type=radio]), 
+ #file fieldset p textarea{
+    background: #ffffff;
+    border: 1px solid #ddd;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    outline: none;
+    padding: 5px;
+    width: 50%;
+}
+
+.submitButton{
+
+	display: inline-block;
+	float: right;
+	border:none;
+	outline:none;
+	text-decoration: none;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color: #ffffff;
+	text-align:center;
+    padding: 3px 25px;
+    text-shadow: 0 1px 1px #777;
+    font-weight:bold;
+    font-family:serif;
+    font-size:17px;
+    -moz-box-shadow:0px 0px 3px #aaa;
+    -webkit-box-shadow:0px 0px 3px #aaa;
+    box-shadow:0px 0px 3px #aaa;
+    background:#336699;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    cursor: pointer;
+
+}
+
+/*
+*
+* For HTTP POLICY Overlay
+*/
+
+.httpProfile_overlay {
+ 
+    display:none;
+    left:50%;
+    top: 100px;
+    background-image: #FFFFFF;
+    padding:35px;
+    
+}
+ 
+/* default close button positioned on upper right corner */
+.httpProfile_overlay .close {
+    background-image:url(../images/icons/close.png);
+    position:absolute; 
+    right:20px; 
+    top:15px;
+    cursor:pointer;
+    height:35px;
+    width:35px;
+}
+ #httpProfileOverlay {
+    background-image:#fff;
+    height:300px;
+	opacity:1;
+	overflow: hidden;
+  }
+  /* container for external content. uses vertical scrollbar, if needed */
+  div.profileResourceTree {
+  
+  	background-color:white;
+    padding: 10px 5px 20px 5px; 
+    width:  450px;
+    height:200px;
+    overflow:auto;
+	opacity:1;
+	border:2px solid #333;
+	/* border-radius:6px;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px; */
+    -moz-box-shadow: 0 0 50px #707070;
+    -webkit-box-shadow: 0 0 50px #707070;
+  }
+#httpPolicyLoader{
+	 position:relative;
+    width:99.9%;
+    height:100%;
+    font-size:13px;
+    background: #FFFFFF;
+    font-family:serif;
+}
+  
+ #httpPolicyLoader p{
+  	padding: 50px 10px 5px 10px; 
+    background-color:#fff;
+    
+  }
+  
+  #httpPolicyLoader input#file{
+
+    margin:5px 7px 10px 7px;
+    padding:2px 1px 2px 1px;
+    background-color:white;
+    
+  }
+   #httpPolicyLoader input#upload{
+
+    margin:5px 7px 10px 7px;
+    padding:5px 20px 5px 20px;
+    
+  }
+
+ #httpPolicyLoader legend{
+ 	
+    color:#ffffff;
+    -moz-box-shadow:0px 0px 3px #aaa;
+    -webkit-box-shadow:0px 0px 3px #aaa;
+    box-shadow:0px 0px 3px #aaa;
+    background-color:#336699;
+    text-shadow: 0 1px 1px #777;
+  	text-align:center;
+    font-size:24px;
+    font-weight:normal;
+    float:left;
+    width:100%;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border:1px solid #d9d9d9;
+  }
+  
+  
+   #resource{
+  overflow: hidden;
+  }
+  
+  #createGroup{
+  	position:relative;
+	text-align:left;
+    color:#ffffff;
+    font-size:22px;
+    font-weight:bold;
+    float:left;
+    width:97%;
+    padding:5px 0px 5px 20px;
+    margin:4px 4px 16px 4px;
+     -moz-box-shadow:0px 0px 3px #aaa;
+    -webkit-box-shadow:0px 0px 3px #aaa;
+    box-shadow:0px 0px 3px #aaa;
+    background:#336699;
+    text-shadow: 0 1px 1px #777;
+  }
+   #resource fieldset {
+	border: none;
+/* 	
+    border-top: 1px solid #63B8FF;
+    border-bottom: 1px solid #63B8FF; */
+    border:1px solid #63B8FF;
+    padding-bottom:20px; 
+    margin: 2px 4px 2px 5px;
+    padding: 2px;
+  
+
+}
+ #resource fieldset legend{
+ margin: 2px;
+ /* // border:1px solid #63B8FF; */
+ padding: 2px 6px;
+ }
+
+  #resource fieldset p {
+	display: inline-block;
+	float:left;
+    border:1px solid #fff;
+    width:90%;
+    padding: 7px 10px;
+    margin-top: 2px;
+    margin-left: 2%;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow:0px 0px 3px #aaa;
+    -webkit-box-shadow:0px 0px 3px #aaa;
+    box-shadow:0px 0px 3px #aaa;
+}
+ #resource fieldset p label{
+ 	
+	float:left;
+	width:20%;
+   /*  text-align:right; */
+    margin-right:10px;
+    line-height:26px;
+    color:#666;
+    text-shadow:1px 1px 1px #fff;
+    font-weight:bold;
+}
+#targetCollection{
+	float:left;
+	width:90%;
+   /*  text-align:right; */
+    line-height:26px;
+    color:#666;
+    text-shadow:1px 1px 1px #fff;
+    font-size: 12px;
+}
+/*  #resource fieldset p label.two{
+	float:left;
+	width:15%;
+    text-align:right;
+    margin-right:10px;
+    line-height:26px;
+    color:#666;
+    text-shadow:1px 1px 1px #fff;
+    font-weight:bold;
+} */
+
+#resource  fieldset p input:not([type=radio]), 
+ #resource fieldset p textarea{
+ 	/* margin-top:4px; */
+    background: #ffffff;
+    border: 1px solid #ddd;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    outline: none;
+    padding: 3px;
+    width: 70%;
+}
+#resource  fieldset  input:not([type=radio]), 
+ #resource fieldset  textarea,  #resource fieldset  select
+ {
+ 	margin-top:4px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    outline: none;
+    padding: 5px;
+    width: 50%;
+}
+#resourceRules{
+	overflow: auto;
+	width: 100%;
+/* 	min-height: 725px; */
+	background: transparent;
+	margin-bottom: 20px;
+}
+
+
+/*
+*
+* For rule generalization Overlay
+*/
+.generalization_overlay {
+ 
+    display:none;
+    left:50%;
+    top: 100px;
+    background-image: #FFFFFF;
+    padding:35px;
+}
+ 
+/* default close button positioned on upper right corner */
+.generalization_overlay .close {
+    background-image:url(../images/icons/close.png);
+    position:absolute; 
+    right:20px; 
+    top:15px;
+    cursor:pointer;
+    height:35px;
+    width:35px;
+}
+ #generalizationOverlay {
+    background-image:#fff;
+    height:300px;
+	opacity:1;
+  }
+  /* container for external content. uses vertical scrollbar, if needed */
+  div.generalizationDiv {
+  
+  	background-color:white;
+    padding: 10px 5px 20px 5px; 
+    width:  450px;
+    height:200px;
+    overflow:auto;
+	opacity:1;
+	border:2px solid #333;
+	/* border-radius:6px;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px; */
+    -moz-box-shadow: 0 0 50px #707070;
+    -webkit-box-shadow: 0 0 50px #707070;
+  }
+  
+#gnrlzRules{
+	position:relative;
+    width:99.9%;
+    height:100%;
+    font-size:13px;
+    background: #FFFFFF;
+    font-family:serif;
+	overflow: hidden;
+}
+
+#gnrlzLegend{
+	position:relative;
+	text-align:left;
+    color:#ffffff;
+    font-size:22px;
+    font-weight:bold;
+    float:left;
+    width:97%;
+    padding:5px 0px 5px 20px;
+    margin:4px 4px 16px 4px;
+     -moz-box-shadow:0px 0px 3px #aaa;
+    -webkit-box-shadow:0px 0px 3px #aaa;
+    box-shadow:0px 0px 3px #aaa;
+    background:#336699;
+    text-shadow: 0 1px 1px #777;	
+}
+#gnrlzRules fieldset {
+	border: none;
+	background: #F0F8FF;
+    border-top: 1px solid #63B8FF;
+    border-bottom: 1px solid #63B8FF;
+    padding-bottom:20px; 
+    margin: 2px 4px 2px 5px;
+  
+
+}
+#gnrlzRules fieldset p {
+	display: inline-block;
+	float:left;
+	margin:5px 5%;
+    background-color:#F9F9F9;
+    border:1px solid #fff;
+    width:90%;
+    padding: 7px 10px;
+    margin-top: 5px;
+    margin-left: 2.5%;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow:0px 0px 3px #aaa;
+    -webkit-box-shadow:0px 0px 3px #aaa;
+    box-shadow:0px 0px 3px #aaa;
+}
+#gnrlzRules fieldset p label{
+	float:left;
+	width:30%;
+   /*  text-align:right; */
+    margin-right:10px;
+    line-height:26px;
+    color:#666;
+    text-shadow:1px 1px 1px #fff;
+    font-weight:bold;
+}
+
+#gnrlzRules fieldset p input:not([type=radio]), 
+#gnrlzRules fieldset p textarea{
+    background: #ffffff;
+    border: 1px solid #ddd;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    outline: none;
+    padding: 5px;
+    width: 50%;
+}
+
