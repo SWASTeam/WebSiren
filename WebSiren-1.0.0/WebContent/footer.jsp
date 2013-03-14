@@ -16,5 +16,5 @@
  
  -->
 <div id="footer">
-	<center><p>© 2011 - 2012 SSRG, NUST SEECS. All Rights Reserved</p></center>
+	<center><p>WebSiren Copyright (C) 2013  SWAS(Semantic Web Application Security) Team, NUST.</p></center>
 </div>
